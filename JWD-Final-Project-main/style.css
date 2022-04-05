@@ -1,13 +1,35 @@
-header {
+.title {
     text-align: center;
 }
-.makeSpace {
-    margin-right: 200%; ;
+
+.task-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    border-width: 5px;
+    padding: 2rem;
+    
 }
-.container{
-    float: left;
-    display: inline;
-    position: relative;
-    border: 2px solid black;
-    padding-right: 200%;
+
+label {
+    color:maroon;
+    display: block;
 }
+
+input, textarea {
+    display: block;
+}
+
+textarea {
+    width: 100%
+}
+
+#createButton {
+    margin:auto
+}
+
+.title {
+    padding: 6rem 0;
+    color: maroon;
+    }

@@ -12,20 +12,56 @@
 
   </head>
   <body>
-    <div class="container">
-  <header><h1>Task Manager Application</h1></header>
- 
-    <form>
+  <header class="title"><h1>Task Manager Application</h1></header>
+  <div class="container">
       <div class="form-group">
+      <!--Task Name-->
+        <form class="task-form">
+          <label for="taskName">
+          Task Name
+        
+          </label> 
+        
+        <input type="text" id="taskName">
+        <br>
+        
+      
 
-    <h1>List</h1>
-    <label for="tasks">TASK NAME:</label><input type="tasks" class="makeSpace">
-    <label for="tasks">TASKS NOTES:</label><input type="tasks" class="makeSpace">
-    <label for="tasks">DUE DATE:</label><input type="tasks" class="makeSpace">
-    <label for="tasks">ASSIGNED TO:</label><input type="tasks" class="makeSpace">
-    <label for="tasks">TASKS:</label><input type="tasks" class="makeSpace">
-   
-</form>
-</div>
+      <!--Assigned To-->
+
+      
+        <label for="assignedTo">
+          Assigned To
+        </label>
+        <input type="text" id="assignedTo">
+        <br>
+      
+      
+
+      <!--Due Date-->
+
+      
+
+        <label for="dueDate">
+          Due Date
+        </label>
+        <input type="date" id="dueDate">
+        <br>
+     
+
+      <!--Task Notes-->
+      
+      
+
+        <label for="taskNotes">
+        Task Notes
+        </label>
+        <textarea id="taskNotes"></textarea>
+        <br>
+        
+        <input type="submit" value="Create Task" id="createButton">
+      
+      </form>
+ 
   </body>
   </html>
