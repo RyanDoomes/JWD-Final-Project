@@ -4,3 +4,10 @@ header {
 .makeSpace {
     margin-right: 200%; ;
 }
+.container{
+    float: left;
+    display: inline;
+    position: relative;
+    border: 2px solid black;
+    padding-right: 200%;
+}
