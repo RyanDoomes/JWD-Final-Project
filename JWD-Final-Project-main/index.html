@@ -15,7 +15,7 @@
   <div class="container">
       <div class="form-group">
       <!--Task Name-->
-        <form class="task-form">
+        <form action="index.html" method="GET" class="task-form">
           <label for="taskName">
           Task Name
         
@@ -62,6 +62,74 @@
       
       </form>
  
+<!--Card for Task Name-->
+      
+      <div class="row">
+      <div class="col-2">
+      <div class="card h-10">
+        <div class="card-header">
+          Task Name
+        </div>
+      <div class="card-body">
+        <output form="taskName" for="taskName" value="taskName"></output>
+      </div>
+      <div class="card-footer">
+      Footer
+      </div>
+      </div>
+      </div>
+
+<!--Card Assigned to-->
+
+<div class="col-2">
+<div class="card">
+  <div class="card-header">
+    Assigned To
+  </div>
+<div class="card-body">
+  <output id="assignedTo">
+</div>
+<div class="card-footer">
+Footer
+</div>
+</div>
+</div>
+
+
+<!--Card Due Date-->
+
+<div class="col-2">
+<div class="card">
+  <div class="card-header">
+    Due Date
+  </div>
+<div class="card-body">
+  <output id="dueDate">
+</div>
+<div class="card-footer">
+Footer
+</div>
+</div>
+</div>
+
+<!--Card Task Notes-->
+
+<div class="col-6">
+<div class="card">
+  <div class="card-header">
+    Task Notes
+  </div>
+<div class="card-body">
+  <output id="taskNotes">
+</div>
+<div class="card-footer">
+Footer
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
 
   </body>
