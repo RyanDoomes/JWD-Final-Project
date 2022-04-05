@@ -22,7 +22,7 @@
         
           </label> 
         
-        <input type="text" id="taskName">
+        <input type="text" id="taskName" required>
         <br>
         
       
@@ -33,7 +33,7 @@
         <label for="assignedTo">
           Assigned To
         </label>
-        <input type="text" id="assignedTo">
+        <input type="text" id="assignedTo" required>
         <br>
       
       
@@ -45,7 +45,7 @@
         <label for="dueDate">
           Due Date
         </label>
-        <input type="date" id="dueDate">
+        <input type="date" id="dueDate" required>
         <br>
      
 
@@ -56,83 +56,34 @@
         <label for="taskNotes">
         Task Notes
         </label>
-        <textarea id="taskNotes"></textarea>
+        <textarea id="taskNotes" required></textarea>
         <br>
         
         <input type="submit" value="Create Task" id="createButton">
       
       </form>
  
-
-<!--Card for Task Name-->
-      
-      <div class="row">
-      <div class="col-2">
-      <div class="card h-10">
-        <div class="card-header">
-          Task Name
+      <div class="card" style="width: 22rem;">
+        <div class="card-body">
+          <h5 class="card-title">Task Name</h5>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted">Assigned To</h6>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted">Due Date</h6>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted">Task Note</h6>
+          
+          <p class="card-text">Task notes will be entered here.</p>
+         <div class="row">
+          <div class="col">
+          <a href="#" class="btn btn-primary">Delete</a>
+          </div>
+        <div class="col">
+          <a href="#" class="btn btn-primary">Mark as done</a>
         </div>
-      <div class="card-body">
-        <output form="taskName" for="taskName" value="taskName"></output>
+        </div>
+        </div>
       </div>
-      <div class="card-footer">
-      Footer
-      </div>
-      </div>
-      </div>
-
-<!--Card Assigned to-->
-
-<div class="col-2">
-<div class="card">
-  <div class="card-header">
-    Assigned To
-  </div>
-<div class="card-body">
-  <output id="assignedTo">
-</div>
-<div class="card-footer">
-Footer
-</div>
-</div>
-</div>
-
-
-<!--Card Due Date-->
-
-<div class="col-2">
-<div class="card">
-  <div class="card-header">
-    Due Date
-  </div>
-<div class="card-body">
-  <output id="dueDate">
-</div>
-<div class="card-footer">
-Footer
-</div>
-</div>
-</div>
-
-<!--Card Task Notes-->
-
-<div class="col-6">
-<div class="card">
-  <div class="card-header">
-    Task Notes
-  </div>
-<div class="card-body">
-  <output id="taskNotes">
-</div>
-<div class="card-footer">
-Footer
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
 
 
   </body>
