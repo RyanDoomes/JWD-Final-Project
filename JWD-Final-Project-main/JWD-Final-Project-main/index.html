@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  </head>
+  <body>
+  <header class="title"><h1>Task Manager Application</h1></header>
+  <div class="container">
+      <div class="form-group">
+      <!--Task Name-->
+        <form action="index.html" method="GET" class="task-form">
+          <label for="taskName">
+          Task Name
+        
+          </label> 
+        
+        <input type="text" id="taskName" required>
+        <br>
+        
+      
+
+      <!--Assigned To-->
+
+      
+        <label for="assignedTo">
+          Assigned To
+        </label>
+        <input type="text" id="assignedTo" required>
+        <br>
+      
+      
+
+      <!--Due Date-->
+
+      
+
+        <label for="dueDate">
+          Due Date
+        </label>
+        <input type="date" id="dueDate" required>
+        <br>
+     
+
+      <!--Task Notes-->
+      
+      
+
+        <label for="taskNotes">
+        Task Notes
+        </label>
+        <textarea id="taskNotes" required></textarea>
+        <br>
+        
+        <input type="submit" value="Create Task" id="createButton">
+      
+      </form>
+ 
+      <div class="card" style="width: 22rem;">
+        <div class="card-body">
+          <h5 class="card-title">Task Name</h5>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted">Assigned To</h6>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted">Due Date</h6>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted">Task Note</h6>
+          
+          <p class="card-text">Task notes will be entered here.</p>
+         <div class="row">
+          <div class="col">
+          <a href="#" class="btn btn-primary">Delete</a>
+          </div>
+        <div class="col">
+          <a href="#" class="btn btn-primary">Mark as done</a>
+        </div>
+        </div>
+        </div>
+      </div>
+
+
+  </body>
+  </html>
