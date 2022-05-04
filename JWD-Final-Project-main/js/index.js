@@ -1,3 +1,2 @@
-class taskManager {
-    
-}
+const taskHtml = createTaskHtml();
+console.log(taskHtml);
