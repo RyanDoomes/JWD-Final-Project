@@ -78,5 +78,5 @@ class TaskManager {
     
 
     this.tasks.push(task);
-    }
-  }`
+    }`
+  }
