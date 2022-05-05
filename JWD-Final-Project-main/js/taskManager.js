@@ -1,7 +1,12 @@
+ const button = document.getElementById('createButton');
+ const form = document.querySelector('form');
 
-const createTaskHtml = (taskName, assignedTo, dueDate, taskNote) => {
-  //document.getElementsByClass('cardTitle').innerHTML('task') = `This is the ${createTaskHtml}`;
-  const html = `<div class="container">
+ button.addEventListener('click', createTaskHtml);
+
+
+ const createTaskHtml = (taskName, assignedTo, dueDate, taskNote) => {
+     //document.getElementsByClass('cardTitle').innerHTML('task') = `This is the ${createTaskHtml}`;
+     const html = `<div class="container">
   <div class="form-group">
   <!--Task Name-->
     <form action="index.html" method="GET" class="task-form">
@@ -49,7 +54,7 @@ const createTaskHtml = (taskName, assignedTo, dueDate, taskNote) => {
     
     <input type="submit" value="Create Task" id="createButton">
   
-  </form>`
+  </form>
 
   return html} 
 
@@ -74,5 +79,4 @@ class TaskManager {
 
     this.tasks.push(task);
     }
-  }
-
+  }`
