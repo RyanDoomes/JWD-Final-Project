@@ -19,6 +19,8 @@ const dueDate = newTaskDueDate.value;
 const description = newTaskDescription.value;
 
 task1.addTask (taskName, assignedTo, dueDate, description);
+
+
 })
 /*
 if(!validFormFieldInput(taskName)){
@@ -32,4 +34,6 @@ if(!validFormFieldInput(taskName)){
 function validFormFieldInput(data){
 return data !== null && data !== '';
 }
-//task1.addTask.newTaskForm(task_Name, assigned_To, due_Date, description_);
+
+const taskHtml = createTaskHtml("Laundry", "Chen", "11-20-2022", "Separate the colors");
+console.log(taskHtml)
