@@ -7,4 +7,4 @@ newTaskForm.addEventListener('submit', (event) => {
     event.preventDefault();
 })
 
-
+delete this
