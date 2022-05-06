@@ -33,7 +33,7 @@ if(!validFormFieldInput(taskName)){
 */
 function validFormFieldInput(data){
 return data !== null && data !== '';
-}
+};
 
 const taskHtml = createTaskHtml("Laundry", "Chen", "11-20-2022", "Separate the colors");
 console.log(taskHtml)

@@ -9,8 +9,11 @@ const newForm = `<li class="list-group-item">
     <small>Due:${dueDate}</small>
 </div>
 <p>${taskNotes}</p>
-</li>
-`;}
+</li>`
+
+return newForm
+
+;}
 
 class TaskManager {
   constructor(currentId = 0) {
