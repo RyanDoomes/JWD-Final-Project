@@ -97,8 +97,7 @@ Notice how each task has a unique `id`? We will be using this `id` in future ste
 In this final step, we will use the `TaskManager` class to keep track of tasks we add with the **New Task** form.
 
 **Note**: For now, if your **New Task** form is on a seperate page to your **Task List**, copy it over to your **Task List** so it's all on the one page.
-
-> #### Useful Resources for this step
+g
 > - [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 > - [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 > - [Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
