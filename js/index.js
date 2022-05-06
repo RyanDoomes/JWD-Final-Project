@@ -7,10 +7,10 @@ newTaskForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
 
-const newTaskNameInput = document.querySelector('#taskNameInput');
-const newTaskAssignedTo = document.querySelector('#assignedToInput');
-const newTaskDueDate = document.querySelector('#dueDateInput');
-const newTaskDescription = document.querySelector('#taskNoteInput');
+const newTaskNameInput = document.querySelector('#taskName');
+const newTaskAssignedTo = document.querySelector('#assignedTo');
+const newTaskDueDate = document.querySelector('#dueDate');
+const newTaskDescription = document.querySelector('#taskNotes');
 
 //validation info
 const taskName = newTaskNameInput.value; 
@@ -18,6 +18,9 @@ const assignedTo = newTaskAssignedTo.value;
 const dueDate = newTaskDueDate.value;
 const description = newTaskDescription.value;
 
+task1.addTask (taskName, assignedTo, dueDate, description);
+})
+/*
 if(!validFormFieldInput(taskName)){
     errorMessage.innerHTML = "Invalid name input";
     errorMessage.style.display = "block"
@@ -25,7 +28,8 @@ if(!validFormFieldInput(taskName)){
     errorMessage.style.display = "none"
 }
 });
-
+*/
 function validFormFieldInput(data){
 return data !== null && data !== '';
-};
+}
+//task1.addTask.newTaskForm(task_Name, assigned_To, due_Date, description_);
