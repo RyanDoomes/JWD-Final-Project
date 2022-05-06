@@ -21,61 +21,47 @@
       <form action="index.html" method="GET" class="task-form">
         <label for="taskName">
           Task Name
-
         </label>
-
         <input type="text" id="taskName" required>
         <br>
-
-
-
         <!--Assigned To-->
-
-
         <label for="assignedTo">
           Assigned To
         </label>
         <input type="text" id="assignedTo" required>
         <br>
-
-
-
         <!--Due Date-->
-
-
-
         <label for="dueDate">
           Due Date
         </label>
         <input type="date" id="dueDate" required>
         <br>
-
-
         <!--Task Notes-->
-
-
-
         <label for="taskNotes">
           Task Notes
         </label>
         <textarea id="taskNotes" required></textarea>
         <br>
 
-        <center><button class="btn btn-primary" type="button">Create Task</button></center>
+        <center><button class="btn btn-primary" type="button" id="newTaskSubmit">Create Task</button></center>
 
       </form>
 
       <div class="card" style="width: 22rem;">
         <div class="card-body">
           <h5 class="card-title">Task Name</h5>
+          <input type="text" placeholder="your task will be here" class="tasklisted" readonly>
           <br>
-          <h6 class="card-subtitle mb-2 text-muted">Assigned To</h6>
+          <h6 class="card-subtitle mb-2 text-muted" id="taskNameInput">Assigned To</h6>
+          <input type="text" placeholder="Assignee" class="tasklisted" readonly>
           <br>
           <h6 class="card-subtitle mb-2 text-muted">Due Date</h6>
+          <input type="date" placeholder="Date to finish by" class="tasklisted" readonly>
           <br>
           <h6 class="card-subtitle mb-2 text-muted">Task Note</h6>
+          <textarea placeholder="notes about the task" class="tasklisted" readonly>
 
-          <p class="card-text">Task notes will be entered here.</p>
+
           <div class="row">
             <div class="col">
               <a href="#" class="btn btn-primary">Delete</a>
