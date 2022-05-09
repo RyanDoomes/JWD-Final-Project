@@ -7,7 +7,9 @@ const newForm = `
     <br>
     <h6 class="card-subtitle mb-2 text-muted" id="assignedToInput">${assignedTo}</h6>
     <br>
+    <br>
     <h6 class="card-subtitle mb-2 text-muted">${dueDate}</h6>
+    <br>
     <p class="card-subtitle mb-2 text-muted">${taskNotes}</p>
      <div class="row">
       <div class="col">
@@ -50,7 +52,7 @@ class TaskManager {
     for(let i = 0; i < this.tasks.length; i++){
       const task = this.tasks[i];
 
-      const date = new Date(dueDate);
+      const date = new Date(task.dueDate);
       const formattedDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
 
       const taskHtml = createTaskHtml(task.id, task.taskName, task.assignedTo, formattedDate, task.taskNotes);
