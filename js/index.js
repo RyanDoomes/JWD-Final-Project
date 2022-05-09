@@ -1,3 +1,4 @@
+
 let task1 = new TaskManager;
 
 const newTaskForm = document.querySelector('.task-form');
@@ -19,6 +20,7 @@ const dueDate = newTaskDueDate.value;
 const description = newTaskDescription.value;
 
 task1.addTask (taskName, assignedTo, dueDate, description);
+task1.render();
 
 
 })
@@ -28,6 +30,7 @@ if(!validFormFieldInput(taskName)){
     errorMessage.style.display = "block"
 }else{
     errorMessage.style.display = "none"
+    
 }
 });
 */
@@ -35,5 +38,5 @@ function validFormFieldInput(data){
 return data !== null && data !== '';
 };
 
-const taskHtml = createTaskHtml("Laundry", "Chen", "11-20-2022", "Separate the colors");
-console.log(taskHtml)
+/*
+const taskHtml = createTaskHtml("Laundry", "Chen", "11-20-2022", "Separate the colors");*/
