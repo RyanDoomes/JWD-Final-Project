@@ -3,15 +3,15 @@ const newForm = `
 
 <div class="card" style="width: 22rem;">
   <div class="card-body">
-    <h5 class="card-title">Task Name:${taskName}</h5>
+    <h5 class="card-title">Task Name:  ${taskName}</h5>
     <br>
-    <h6 class="card-subtitle mb-2 text-muted" id="assignedToInput">Assignee:${assignedTo}</h6>
+    <h6 class="card-subtitle mb-2 text-muted" id="assignedToInput">Assignee:  ${assignedTo}</h6>
     <br>
-    <h6 class="card-subtitle mb-2 text-muted">Due Date:${dueDate}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">Due Date:  ${dueDate}</h6>
     <br>
-    <p class="card-subtitle mb-2 text-muted">Task Notes:${taskNotes}</p>
+    <p class="card-subtitle mb-2 text-muted">Task Notes:  ${taskNotes}</p>
     <br>
-    <h6 class="card-subtitle mb-2 text-muted">${status}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">Status:  ${status}</h6>
     <br>
      <div class="row">
       <div class="col">
