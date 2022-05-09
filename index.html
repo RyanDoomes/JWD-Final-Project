@@ -42,12 +42,17 @@
         </label>
         <textarea id="taskNotes" required></textarea>
         <br>
-
+        <select name="status" id="status">
+        <option value= "">--Choose a status-- </option>
+        <option value="To do">To Do</option>
+        <option value="done">Done</option>
+        </select>
         <center><button class="btn btn-primary" type="submit" id="newTaskSubmit">Create Task</button></center>
 
       </form>
       </div>
       </div>
+
       <div class="row">
       <div class="col">
         <h2>Task</h2>
@@ -56,23 +61,25 @@
           <div class="card-body">
             <h5 class="card-title">Task Name</h5>
             <br>
-            <h6 class="card-subtitle mb-2 text-muted" id="assignedToInput">Assigned To</h6>
+            <h6 class="card-subtitle mb-2 text-muted" id="assignedTo">Assigned To</h6>
             <br>
             <h6 class="card-subtitle mb-2 text-muted">Due Date</h6>
-            <p class="card-subtitle mb-2 text-muted">Task Notes</p>
+            <p class="card-subtitle mb-2 text-muted" id="taskNotes">Task Notes</p>
+            <br>
+            <h6 class="card-subtitle mb-2 text-muted" id="status">Status</h6>
+            <br>
              <div class="row">
               <div class="col">
                 <a href="#" class="btn btn-primary">Delete</a>
               </div>
               <div class="col">
-                <a href="#" class="btn btn-primary">Mark as done</a>
+                <a href="#" class="btn btn-primary done-button">Mark as done</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
       
 
 
