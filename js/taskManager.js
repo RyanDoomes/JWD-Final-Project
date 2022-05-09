@@ -1,5 +1,5 @@
 const createTaskHtml = (taskName, assignedTo, dueDate, taskNotes)=>{
-const newForm = `<form class="taskList">
+const newForm = `
 
 <div class="card" style="width: 22rem;">
   <div class="card-body">
@@ -18,8 +18,7 @@ const newForm = `<form class="taskList">
       </div>
     </div>
   </div>
-</div>
-</form>`
+</div>`
 
 return newForm
 
@@ -49,9 +48,9 @@ class TaskManager {
     const tasksHtmlList = [];
 
     for(let i = 0; i < this.tasks.length; i++){
-      const task = this.tasks[1];
+      const task = this.tasks[i];
 
-      const date = new Date(task.dueDate);
+      const date = new Date(dueDate);
       const formattedDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
 
       const taskHtml = createTaskHtml(task.id, task.taskName, task.assignedTo, formattedDate, task.taskNotes);
@@ -64,6 +63,7 @@ class TaskManager {
     const tasksList = document.querySelector('#tasksList');
     tasksList.innerHTML = tasksHtml;
 
+  
 
   }
   
