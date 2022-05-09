@@ -37,3 +37,8 @@ textarea {
     .btn {
         display: flex;
     }
+
+.card {
+    padding-bottom: 50px;
+    border: black dotted 2px;
+}

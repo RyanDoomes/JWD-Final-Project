@@ -44,5 +44,5 @@ return data !== null && data !== '';
 const taskHtml = createTaskHtml("Laundry", "Chen", "11-20-2022", "Separate the colors");*/
 const changeStatus = document.querySelector('#tasksList');
 changeStatus.addEventListener('click', (event) => { 
-    if(event.target.)
+    
 });
