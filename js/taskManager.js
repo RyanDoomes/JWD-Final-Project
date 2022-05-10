@@ -1,7 +1,8 @@
 const createTaskHtml = (id, taskName, assignedTo, dueDate, taskNotes, status)=>{
-const newForm = `
+const newForm = 
 
-<div class="card" style="width: 22rem;">
+`
+<div class="card" style="width: 22rem; margin: 10%; box-shadow: 4px 4px ;" data-task-id=${id}>
   <div class="card-body">
     <h5 class="card-title">Task Name:  ${taskName}</h5>
     <br>
@@ -48,7 +49,18 @@ class TaskManager {
   
   this.tasks.push(task);
   }
-  
+  getTaskById(taskId){
+    let foundTask;
+    for (let i = 0; i< this.tasks.length; i++) {
+      const task = this.tasks[i];
+
+      if (task.id === taskId) {
+        foundTask = task;
+      }
+    }
+    return foundTask;
+  }
+
   render(){
    
     const tasksHtmlList = [];
@@ -72,6 +84,6 @@ class TaskManager {
   
 
   }
-  
+
 
 }
