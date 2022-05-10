@@ -1,5 +1,5 @@
 body{
-    background-image: url(/photos/background.jpg);
+    background-image: url(https://github.com/RyanDoomes/JWD-Final-Project-main/blob/main/photos/background.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -15,7 +15,7 @@ body{
     border-radius: 20px;
     border-width: 5px;
     padding: 2rem;
-    background-image: url(/photos/backgroundImage.jpg);
+    background-image: url(https://github.com/RyanDoomes/JWD-Final-Project-main/blob/main/photos/backgroundImage.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Indie Flower', cursive;
