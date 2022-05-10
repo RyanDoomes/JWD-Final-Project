@@ -5,15 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Group 3's Task Manager</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oleo+Script&family=Permanent+Marker&family=Space+Mono&display=swap"
+    rel="stylesheet"> 
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <div>
   <header class="title">
-    <h1>Task Manager Application</h1>
+    <h1 style="font-family: 'Permanent Marker', cursive; text-shadow: 4px 4px white; color: black ;">Task Manager Application</h1>
   </header>
   <div class="container">
     <div class="form-group">
@@ -43,51 +48,52 @@
         <textarea id="taskNotes" required></textarea>
         <br>
         <select name="status" id="status">
-        <option value= "">--Choose a status-- </option>
-        <option value="To do">To Do</option>
-        <option value="done">Done</option>
+          <option value="">--Choose a status-- </option>
+          <option value="To do">To Do</option>
+          <option value="done">Done</option>
         </select>
-        <center><button class="btn btn-primary" type="submit" id="newTaskSubmit">Create Task</button></center>
+        <center><button class="btn btn-primary" type="submit" id="newTaskSubmit" style="margin:15px 0 0 0 ;">Create
+            Task</button></center>
 
       </form>
-      </div>
-      </div>
+    </div>
+  </div>
 
-      <div class="row">
-      <div class="col">
-        <h2>Task</h2>
-        <ul class="list-group" id="tasksList"></ul>
-        <div class="card" style="width: 22rem;">
-          <div class="card-body">
-            <h5 class="card-title">Task Name</h5>
-            <br>
-            <h6 class="card-subtitle mb-2 text-muted" id="assignedTo">Assigned To</h6>
-            <br>
-            <h6 class="card-subtitle mb-2 text-muted">Due Date</h6>
-            <p class="card-subtitle mb-2 text-muted" id="taskNotes">Task Notes</p>
-            <br>
-            <h6 class="card-subtitle mb-2 text-muted" id="status">Status</h6>
-            <br>
-             <div class="row">
-              <div class="col">
-                <a href="#" class="btn btn-primary">Delete</a>
-              </div>
-              <div class="col">
-                <a href="#" class="btn btn-primary done-button">Mark as done</a>
-              </div>
+  <div class="row">
+    <div class="col-3">
+      <h2 style="text-align:center">Task</h2>
+      <ul class="list-group" id="tasksList"></ul>
+      <div class="card" style="width: 22rem; margin: 0 0 0 25%; box-shadow: 4px 4px ;">
+        <div class="card-body">
+          <h5 class="card-title">Task Name</h5>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted" id="assignedTo">Assigned To</h6>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted">Due Date</h6>
+          <p class="card-subtitle mb-2 text-muted" id="taskNotes">Task Notes</p>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted" id="status">Status</h6>
+          <br>
+          <div class="row">
+            <div class="col">
+              <a href="#" class="btn btn-primary">Delete</a>
+            </div>
+            <div class="col">
+              <a href="#" class="btn btn-primary done-button">Mark as done</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-      
+  </div>
 
 
 
-          
-    
-      <script src="js/taskManager.js"></script>
-      <script src="js/index.js"></script>
-</body>
+
+
+
+  <script src="js/taskManager.js"></script>
+  <script src="js/index.js"></script>
+  </body>
 
 </html>
